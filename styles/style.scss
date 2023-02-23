@@ -1,3 +1,7 @@
+html {
+    font-size: 62.5%;
+}
+
 body {
     margin: 1.5em;
     font-family: 'Poppins', sans-serif;
@@ -5,7 +9,7 @@ body {
 
 a {
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 2.3rem;
 }
 
 .hero-img {
@@ -60,7 +64,7 @@ nav {
     .close {
         float: right;
         margin: 2em;
-        width: 2.5em;
+        width: 4.5em;
     }
 }
 
@@ -69,14 +73,14 @@ header {
     justify-content: space-between;
 
     svg {
-        width: 2.2em;
+        width: 3.5em;
         margin-top: -0.6em;
         cursor: pointer;
     }
 }
 
 .subhead {
-    font-size: 1.4rem;
+    font-size: 2.2rem;
 }
 
 section.hero {
@@ -84,18 +88,26 @@ section.hero {
     height: 90vh;
     animation: moveDown 1.5s ease-in-out forwards;
     opacity: 0;
+
     h1 {
-        font-size: 3rem;
+        font-size: 5rem;
         margin-top: 2em;
-        line-height: 3.3rem;
+        line-height: 6.2rem;
         margin-bottom: 2em;
+        background: rgba(150, 150, 150, 0.5);
     }
 
-    .down-arrow {
+    p {
+        font-size: 3rem;
+        margin: 0;
+        background: rgba(150, 150, 150, 0.5);
+    }
+
+    svg.down-arrow {
         stroke: black;
         position: absolute;
         bottom: 2em;
-        width: 1em;
+        width: 2.5em;
         animation: moveArrow 1s alternate-reverse infinite;
 
         path {
@@ -112,7 +124,7 @@ section.hero {
     }
     .title {
         font-weight: bold;
-        font-size: 1.25rem;
+        font-size: 2rem;
     }
     .desc {
         line-height: 1.5rem;
@@ -138,7 +150,7 @@ section.hero {
         left: unset;
         right: 0;
         width: 50%;
-        height: 42em;
+        height: 68em;
     }
 
     .menu {
@@ -164,7 +176,7 @@ section.hero {
             a {
                 color: black;
                 padding: 0.5em 1.5em;
-                font-size: 0.9rem;
+                font-size: 1.4rem;
 
                 &:hover {
                     background: none;
@@ -179,6 +191,10 @@ section.hero {
         height: auto;
         width: 40%;
         margin-bottom: 8em;
+
+        h1, p {
+            background: none;
+        }
 
         svg.down-arrow {
             stroke: black;
