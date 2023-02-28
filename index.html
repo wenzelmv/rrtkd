@@ -11,59 +11,64 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+    <header>
+        <a href="#" class="logo"><img src="images/rrtkd-logo.jpg" alt="RRTKD Logo"></a>
+        <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="black"/>
+        </svg>
+        <nav>
+            <svg class="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C17.53 2 22 6.47 22 12C22 17.53 17.53 22 12 22C6.47 22 2 17.53 2 12C2 6.47 6.47 2 12 2ZM15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z" fill="black"/>
+            </svg> 
+            <ul>
+                <li><a class="active" href="#">Home</a></li>
+                <li><a href="html/about.html">About</a></li>
+                <li><a href="html/contact.html">Contact</a></li>
+                <li><a href="html/faq.html">FAQ</a></li>
+                <li><a href="html/gallery.html">Gallery</a></li>
+            </ul>   
+        </nav>
+    </header>
     <div class ="wrapper">
-        <header>
-            <a href="#" class="logo" href="#"><img src="images/rrtkd_logo.jpg" alt="RRTKD Logo"></a>
-            <nav>
-                <svg class="close" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 2C17.53 2 22 6.47 22 12C22 17.53 17.53 22 12 22C6.47 22 2 17.53 2 12C2 6.47 6.47 2 12 2ZM15.59 7L12 10.59L8.41 7L7 8.41L10.59 12L7 15.59L8.41 17L12 13.41L15.59 17L17 15.59L13.41 12L17 8.41L15.59 7Z" fill="black"/>
-                </svg> 
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="html/about.html">About</a></li>
-                    <li><a href="html/contact.html">Contact</a></li>
-                    <li><a href="html/faq.html">FAQ</a></li>
-                    <li><a href="html/gallery.html">Gallery</a></li>
-                </ul>   
-            </nav>
-            <svg class="menu" viewBox="0 0 48 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M24 32H0V26.6667H24V32ZM48 18.6667H0V13.3333H48V18.6667ZM48 5.33333H24V0H48V5.33333Z" fill="white"/>
-            </svg>
-        </header>
         <div class="hero-img"></div>
-
         <section class="hero">
-            <h1>Discipline, control, and strength.</h1>
-            <p class="subhead">Learn from the best.</p>
-            <svg class="down-arrow" viewBox="0 0 16 132" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M7.29289 131.707C7.68341 132.098 8.31658 132.098 8.7071 131.707L15.0711 125.343C15.4616 124.953 15.4616 124.319 15.0711 123.929C14.6805 123.538 14.0474 123.538 13.6568 123.929L7.99999 129.586L2.34314 123.929C1.95262 123.538 1.31945 123.538 0.928927 123.929C0.538402 124.319 0.538402 124.953 0.928927 125.343L7.29289 131.707ZM7 -4.37114e-08L6.99999 131L8.99999 131L9 4.37114e-08L7 -4.37114e-08Z" fill="black"/>
-            </svg>  
+            <h1>Unlock your potential with Taekwondo.</h1>
+            <p class="tagline">Train your mind, body, and spirit for a better life.</p>
+            <div class="cta">
+                <a href="#feature-section" class="primary-cta">Get started today!</a>
+            </div>
         </section>
 
-        <section class="more-info">
-            <div class="feature">
-                <div class="content">
-                    <p class="title">Grandmaster Jim Grimstead</p>
-                    <p class="desc">Lorem ipsum dolor sit amet.</p>
+        <section id="feature-section" class="features">
+
+            <div class="class-cards">
+                <div class="card card1">
+                    <div class="card-title">
+                        <div>
+                            <p>Kids Classes<p>
+                        </div>
+                    </div>
+                    <div class="card-desc">
+                        <h2>Title</h2>
+                        <div class="line"></div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio obcaecati illo ducimus.</p>
+                        <a href="#" class="kids-class-link">Learn more</a>
+                    </div>
                 </div>
-                <img src="images/gm_jim_gm_ahn.jpg" alt="Grandmaster Jim and Grandmaster Ahn">
+                <div class="card card2">
+                    <div class="card-title">
+                        <div>
+                            <p>Adult Classes<p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="feature left">
-                <div class="content">
-                    <p class="title">Grandmaster Jim's Qualifications</p>
-                    <p class="desc">Lorem ipsum dolor sit amet.</p>
-                </div>
-                <img src="images/gm_jim_others_testing_board.jpg" alt="Testing board">
-            </div>
-            <div class="feature">
-                <div class="content">
-                    <p class="title"></p>
-                    <p class="desc">Lorem ipsum dolor sit amet.</p>
-                </div>
-                <img src="images/gm_jim_kukkiwon_president.jpg" alt="Grandmaster Jim and the president of the Kukkiwon">
+            <div class="news">
+                <a href="#" class="location-icon"><img src="images/icons/icons8-map-marker-48.png" alt="Map icon"></a>
+                <p class="news-details">We have moved to a bigger gym!</p>
             </div>
         </section>
-        </div>
+    </div>
     <script src="js/main.js"></script>
 </body>
 </html>
