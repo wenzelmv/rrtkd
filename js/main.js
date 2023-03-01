@@ -30,3 +30,7 @@ function updatePercentage() {
     tl.progress();
     console.log(tl.progress());
 }
+
+
+
+
