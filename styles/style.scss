@@ -42,6 +42,7 @@ nav {
             padding: 0.75em 2em;
             display: block;
             width: 100%;
+            transition: 1s;
 
             &:hover {
                 background: rgb(238, 238, 238);
@@ -138,39 +139,11 @@ header {
             a.active {
                 color: rgb(57, 76, 255);
                 background: none;
+
+                &hover {
+                    background: none;
+                }
             }
         }
-    }
-}
-
-@media only screen and (min-width: 1200px) {
-    .wrapper {
-        width: 1200px;
-        margin: 0 auto;
-    }
-}
-
-@keyframes introLoad {
-    from {
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-    to {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    }
-}
-
-@keyframes moveDown {
-    from {
-        transform: translateY(-100px);
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes growIn {
-    to {
-        transform: scale(1);
     }
 }

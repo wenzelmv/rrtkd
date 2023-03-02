@@ -40,6 +40,7 @@ nav ul a {
   padding: 0.75em 2em;
   display: block;
   width: 100%;
+  transition: 1s;
 }
 nav ul a:hover {
   background: rgb(238, 238, 238);
@@ -121,34 +122,7 @@ header .logo {
     color: rgb(57, 76, 255);
     background: none;
   }
-}
-@media only screen and (min-width: 1200px) {
-  .wrapper {
-    width: 1200px;
-    margin: 0 auto;
-  }
-}
-@keyframes introLoad {
-  from {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-  }
-  to {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  }
-}
-@keyframes moveDown {
-  from {
-    transform: translateY(-100px);
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes growIn {
-  to {
-    transform: scale(1);
+  nav ul a.activehover {
+    background: none;
   }
 }/*# sourceMappingURL=style.css.map */
