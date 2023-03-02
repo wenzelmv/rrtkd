@@ -140,10 +140,11 @@ header {
                 color: rgb(57, 76, 255);
                 background: none;
 
-                &hover {
+                &:hover {
                     background: none;
                 }
             }
         }
     }
+    
 }

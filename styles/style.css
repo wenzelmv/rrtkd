@@ -122,7 +122,7 @@ header .logo {
     color: rgb(57, 76, 255);
     background: none;
   }
-  nav ul a.activehover {
+  nav ul a.active:hover {
     background: none;
   }
 }/*# sourceMappingURL=style.css.map */
