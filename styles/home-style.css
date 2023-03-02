@@ -1,0 +1,233 @@
+.hero-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/midjourney/guy-stance-facing-left.png");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
+  animation: introLoad 2s forwards;
+}
+
+section.hero {
+  color: white;
+  height: 80vh;
+  animation: moveDown 1.5s ease-in-out forwards;
+  opacity: 0;
+}
+section.hero h1, section.hero p.tagline {
+  background: rgba(48, 48, 48, 0.75);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+section.hero h1 {
+  font-size: 5rem;
+  margin-top: 2em;
+  line-height: 6.2rem;
+  margin-bottom: 2em;
+}
+section.hero p.tagline {
+  font-size: 3rem;
+  margin: 0;
+}
+section.hero .primary-cta {
+  background-color: rgb(223, 0, 0);
+  font-size: 2.4rem;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.5em;
+  padding: 1em 2em;
+  position: absolute;
+  bottom: 10em;
+  transition: 0.3s;
+}
+section.hero .primary-cta:hover {
+  background: rgb(255, 0, 0);
+  transform: scale(1.05);
+}
+
+.feature-img {
+  position: absolute;
+  left: 0;
+  background: url("../images/midjourney/gym_background-stylized.png");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 90vh;
+  z-index: -1;
+  animation: introLoad 2s forwards;
+  opacity: 0.75;
+}
+
+/* Column classes gallery */
+.class-cards {
+  margin-top: 5em;
+  flex-grow: 1;
+  display: grid;
+  gap: 2.9em;
+  height: 50em;
+  grid-template-columns: repeat(2, auto);
+  grid-template-areas: "left right";
+  /* Card microinteractions */
+}
+.class-cards .card {
+  border-radius: 1.4em;
+  padding: 1.6em;
+  background-size: 150%;
+  display: flex;
+  align-items: start;
+  transition: background-size 0.3s;
+}
+.class-cards .card p {
+  color: black;
+  background: none;
+}
+.class-cards .card1 {
+  grid-area: left;
+  background-image: url("../images/midjourney/three-kids-anime.png");
+  position: relative;
+}
+.class-cards .card2 {
+  grid-area: right;
+  background-image: url("../images/midjourney/adult-class-realistic.png");
+  position: relative;
+}
+.class-cards .card-title {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 0.5em;
+  padding: 0 0.5em;
+  width: 100%;
+  display: absolute;
+  align-items: center;
+  justify-content: space-between;
+  transition: 0.3s;
+  font-size: 2.4em;
+}
+.class-cards .card-desc {
+  position: absolute;
+  top: 33%;
+  transform: translate(100%, -33%);
+  background-color: rgba(169, 101, 0, 0.8);
+  padding: 2em 1em;
+  color: #FFF;
+  text-align: right;
+  transition: 0.3s;
+}
+.class-cards .card-desc h2 {
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
+}
+.class-cards .card-desc .line {
+  width: 70px;
+  height: 5px;
+  background-color: #FFF;
+  margin: 1rem 0 1rem auto;
+}
+.class-cards .card-desc p {
+  font-size: 1.8rem;
+  text-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.2);
+  margin-bottom: 1rem;
+}
+.class-cards .card-desc a.kids-class-link {
+  padding: 0.3rem 1.5rem;
+  background-color: transparent;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 2px solid #FFF;
+  color: #FFF;
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+.class-cards .card-desc a.kids-class-link:hover {
+  background-color: #FFF;
+  color: rgba(169, 101, 0, 0.8);
+}
+.class-cards .card:hover {
+  background-size: 160%;
+}
+.class-cards .card:hover .card-title {
+  transform: translateY(-50px);
+  opacity: 0;
+}
+.class-cards .card:hover .card-desc {
+  transform: translate(0, -33%);
+}
+
+/* News section */
+.news {
+  display: flex;
+  gap: 3em;
+  padding: 4em;
+  margin-top: 5em;
+  border: 1px solid black;
+  border-radius: 1.9em;
+  position: relative;
+  color: black;
+  align-items: center;
+}
+.news a.location-icon {
+  margin: 0;
+}
+.news p.news-details {
+  font-size: 2.4rem;
+  margin: 0;
+}
+
+@media only screen and (min-width: 920px) {
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 100%;
+    height: 70em;
+  }
+  section.hero {
+    color: black;
+    height: 60vh;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero h1, section.hero p {
+    background: none;
+  }
+  section.hero svg.down-arrow {
+    stroke: black;
+    position: unset;
+  }
+  section.hero svg.down-arrow path {
+    fill: black;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@keyframes introLoad {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+@keyframes moveDown {
+  from {
+    transform: translateY(-100px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes growIn {
+  to {
+    transform: scale(1);
+  }
+}/*# sourceMappingURL=home-style.css.map */
