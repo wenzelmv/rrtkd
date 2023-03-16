@@ -114,12 +114,12 @@ header {
 
     nav {
         transform: translateX(0);
-        position: unset;
+        position: fixed;
         height: auto;
-        width: auto;
+        width: 100%;
         overflow: hidden;
         display: block;
-        background: none;
+        background: white;
 
         svg.close {
             display: none;

@@ -10,6 +10,7 @@
     height: 90vh;
     z-index: -1;
     animation: introLoad 2s forwards;
+    filter: brightness(75%);
 }
 
 section.hero {
@@ -22,6 +23,7 @@ section.hero {
         background: rgba(48, 48, 48, 0.75);
         padding-left: 0.5em;
         padding-right: 0.5em;
+        text-align: center;
         //border-radius: 0.5em;
     }
 
@@ -83,7 +85,7 @@ section.hero {
         "left right";
 
         .card {
-            border-radius: 1.4em;
+            //border-radius: 1.4em;
             padding: 1.6em;
             background-size: 150%;
             display: flex;
@@ -100,12 +102,14 @@ section.hero {
             grid-area: left;
             background-image: url('../images/midjourney/three-kids-anime.png');
             position: relative;
+            background-repeat: no-repeat;
         }
         
         .card2 {
             grid-area: right;
             background-image: url('../images/midjourney/adult-class-realistic.png');
             position: relative;
+            background-repeat: no-repeat;
         }
             
         .card-title {
@@ -119,12 +123,11 @@ section.hero {
             transition: 0.3s;
             font-size: 2.4em;
         }
-        
+
         .card-desc {
             position: absolute;
             top: 33%;
-            transform: translate(100%, -33%);
-            background-color: rgba(169, 101, 0, 0.8);
+            background-color: rgba(188, 188, 188, 0.8);
             padding: 2em 1em;
             color: #FFF;
             text-align: right;
@@ -159,7 +162,7 @@ section.hero {
         
                 &:hover {
                     background-color: #FFF;
-                    color: rgba(169, 101, 0, 0.8);
+                    color: rgba(255, 0, 0, 0.8);
                 }
             }
         }
@@ -220,15 +223,9 @@ section.hero {
         h1, p {
             background: none;
         }
-
-        svg.down-arrow {
-            stroke: black;
-            position: unset;
-    
-            path {
-                fill: black;
-            }
-        }
+    }
+    .card-desc {
+        transform: translate(100%, -33%);
     }
 }
 

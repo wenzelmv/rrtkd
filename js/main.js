@@ -10,11 +10,6 @@ close.addEventListener('click', () => {
     nav.classList.remove('open-nav');
 });
 
-var tl = new TimelineMax();
-const controller = new ScrollMagic.Controller();
-
-tl.from('#feature-img-1', 0.5, {x:200, opacity: 0, ease: Power4.easeInOut}, "=-1");
-
 const scene = new ScrollMagic.Scene({
     triggerElement: ".more-info",
     triggerHook: "onLeave",
@@ -24,13 +19,10 @@ const scene = new ScrollMagic.Scene({
   .setTween(tl)
     .addTo(controller);
 
-
 // Calculates percentage of a timeline
 function updatePercentage() {
     tl.progress();
     console.log(tl.progress());
 }
-
-
 
 

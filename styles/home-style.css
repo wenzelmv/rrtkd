@@ -10,6 +10,7 @@
   height: 90vh;
   z-index: -1;
   animation: introLoad 2s forwards;
+  filter: brightness(75%);
 }
 
 section.hero {
@@ -22,6 +23,7 @@ section.hero h1, section.hero p.tagline {
   background: rgba(48, 48, 48, 0.75);
   padding-left: 0.5em;
   padding-right: 0.5em;
+  text-align: center;
 }
 section.hero h1 {
   font-size: 5rem;
@@ -76,7 +78,6 @@ section.hero .primary-cta:hover {
   /* Card microinteractions */
 }
 .class-cards .card {
-  border-radius: 1.4em;
   padding: 1.6em;
   background-size: 150%;
   display: flex;
@@ -91,11 +92,13 @@ section.hero .primary-cta:hover {
   grid-area: left;
   background-image: url("../images/midjourney/three-kids-anime.png");
   position: relative;
+  background-repeat: no-repeat;
 }
 .class-cards .card2 {
   grid-area: right;
   background-image: url("../images/midjourney/adult-class-realistic.png");
   position: relative;
+  background-repeat: no-repeat;
 }
 .class-cards .card-title {
   background: rgba(255, 255, 255, 0.9);
@@ -111,8 +114,7 @@ section.hero .primary-cta:hover {
 .class-cards .card-desc {
   position: absolute;
   top: 33%;
-  transform: translate(100%, -33%);
-  background-color: rgba(169, 101, 0, 0.8);
+  background-color: rgba(188, 188, 188, 0.8);
   padding: 2em 1em;
   color: #FFF;
   text-align: right;
@@ -144,7 +146,7 @@ section.hero .primary-cta:hover {
 }
 .class-cards .card-desc a.kids-class-link:hover {
   background-color: #FFF;
-  color: rgba(169, 101, 0, 0.8);
+  color: rgba(255, 0, 0, 0.8);
 }
 .class-cards .card:hover {
   background-size: 160%;
@@ -193,12 +195,8 @@ section.hero .primary-cta:hover {
   section.hero h1, section.hero p {
     background: none;
   }
-  section.hero svg.down-arrow {
-    stroke: black;
-    position: unset;
-  }
-  section.hero svg.down-arrow path {
-    fill: black;
+  .card-desc {
+    transform: translate(100%, -33%);
   }
 }
 @media only screen and (min-width: 1200px) {
